@@ -9,7 +9,7 @@ let map = L.map('map-canvas', {
     bounds: L.bounds([-285401.920, 903401.920], [595401.920, 22598.080])
   }),
   layers: [],
-  center: [52.010, 4.36744],main
+  center: [52.010, 4.36744],
   zoom: 9,
 
 });
@@ -29,7 +29,6 @@ let baseLayers = {
   "Topographical map": basemap_pdok
 };
 let toc = L.control.layers(baseLayers).addTo(map);
-
 // Register a geocoder to the map app 
 register_geocoder = function (mapInstance) {
   let polygon = null;
